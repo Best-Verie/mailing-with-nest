@@ -11,14 +11,14 @@ export class SendgridService {
     }
 
     async send(mail:SendGrid.MailDataRequired){
-        try{
+        // try{
             console.log("maillllllllllll", mail)
         const transport = await SendGrid.send(mail);
         console.log(`E-Mail sent to ${mail.to}`);
         return transport;
-        }catch(error){
-           throw new BadRequestException(error.message)
-        }
+        // }catch(error){
+        //    throw new BadRequestException(error.message)
+        // }
             
     }
 }

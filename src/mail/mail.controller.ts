@@ -12,7 +12,7 @@ export class MailController {
   @Post('send-email/:email')
   async sendEmail(@Param() email) {
     const mail = {
-      to: email,
+      to: 'irabestverie@gmail.com',
       cc: 'mukezwa@gmail.com',
       bcc: 'irabestverie2016@gmail.com',
       subject: 'welcome message',
